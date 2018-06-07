@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>足球宝贝投票首页</title>
+
+    <script src="js/jquery-1-11-3-min.js"></script>
+</head>
+
+<style>
+    input.text {
+        text-align: center;
+    }
+</style>
+
+<body>
+<div>
+    <img style="position:absolute; z-index: 1; width: 951px; height: 1480px" src="images/ftBodyHomeShow.jpg">
+
+    <img style="position:absolute; z-index: 2; top: 275px; left: 95px; width: 630px; height: 133px"
+         src="images/sInput.png">
+
+    <div style="position:relative;">
+        　　 <input id="text" class="text" type="text" style="font-family:'Microsoft YaHei';font-size:20px; color: #7b7b7b;
+                border:0px;background:none; position:absolute; z-index:2; left:300px; top:312px; width: 200px; height: 30px"
+                  placeholder="搜索编号"/>
+    </div>
+
+    <img id="queryCode" style="position:absolute; z-index: 3; top: 287px; left: 640px; width: 200px; height: 100px"
+         src="images/button/searchButton.png" onclick="queryCode()">
+
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <div>
+        <img style="position:absolute; z-index: 2; top: 390px; left: 66px; width: 242px; height: 270px"
+             src="images/ftBodyPWB.png">
+
+        <span id="bgTitle1" style="position:absolute; z-index: 2; top: 635px; left: 55px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">青春美少女</span>
+
+        <!--人气1-->
+        <span id="popularity1" style="position:absolute; z-index: 2; top: 680px; left: 90px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">19230</span>
+
+        <!--编码1-->
+        <span id="code1" style="position:absolute; z-index: 2; top: 723px; left: 83px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">3628</span>
+
+        <img style="position:absolute; z-index: 2; top: 750px; left: 85px; width: 200px; height: 100px"
+             src="images/button/aMVoteButton.png" onclick="">
+    </div>
+
+    <div>
+        <img style="position:absolute; z-index: 2; top: 390px; left: 360px; width: 242px; height: 270px"
+             src="images/ftBodyPWB.png">
+
+        <span id="bgTitle2" style="position:absolute; z-index: 2; top: 635px; left: 350px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">青春美少女</span>
+
+        <!--人气2-->
+        <span id="popularity2" style="position:absolute; z-index: 2; top: 680px; left: 387px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">19230</span>
+
+        <!--编码2-->
+        <span id="code2" style="position:absolute; z-index: 2; top: 723px; left: 380px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">3628</span>
+
+        <img style="position:absolute; z-index: 2; top: 750px; left: 380px; width: 200px; height: 100px"
+             src="images/button/aMVoteButton.png" onclick="">
+    </div>
+
+    <div>
+        <img style="position:absolute; z-index: 2; top: 390px; left: 655px; width: 242px; height: 270px"
+             src="images/ftBodyPWB.png">
+
+        <span id="bgTitle3" style="position:absolute; z-index: 2; top: 635px; left: 645px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">青春美少女</span>
+
+        <!--人气3-->
+        <span id="popularity3" style="position:absolute; z-index: 2; top: 680px; left: 680px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">19230</span>
+
+        <!--编码3-->
+        <span id="code3" style="position:absolute; z-index: 2; top: 723px; left: 673px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">3628</span>
+
+        <img style="position:absolute; z-index: 2; top: 750px; left: 680px; width: 200px; height: 100px"
+             src="images/button/aMVoteButton.png" onclick="">
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <div>
+        <img style="position:absolute; z-index: 2; top: 842px; left: 66px; width: 242px; height: 270px"
+             src="images/ftBodyPWB.png">
+
+        <span id="bgTitle4" style="position:absolute; z-index: 2; top: 1085px; left: 55px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">青春美少女</span>
+
+        <!--人气4-->
+        <span id="popularity4" style="position:absolute; z-index: 2; top: 1130px; left: 90px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">19230</span>
+
+        <!--编码4-->
+        <span id="code4" style="position:absolute; z-index: 2; top: 1172px; left: 83px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">3628</span>
+
+        <img style="position:absolute; z-index: 2; top: 1200px; left: 85px; width: 200px; height: 100px"
+             src="images/button/aMVoteButton.png" onclick="">
+    </div>
+
+    <div>
+        <img style="position:absolute; z-index: 2; top: 842px; left: 360px; width: 242px; height: 270px"
+             src="images/ftBodyPWB.png">
+
+        <span id="bgTitle5" style="position:absolute; z-index: 2; top: 1085px; left: 350px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">青春美少女</span>
+
+        <!--人气5-->
+        <span id="popularity5" style="position:absolute; z-index: 2; top: 1130px; left: 387px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">19230</span>
+
+        <!--编码5-->
+        <span id="code5" style="position:absolute; z-index: 2; top: 1173px; left: 380px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">3628</span>
+
+        <img style="position:absolute; z-index: 2; top: 1200px; left: 380px; width: 200px; height: 100px"
+             src="images/button/aMVoteButton.png" onclick="">
+    </div>
+
+    <div>
+        <img style="position:absolute; z-index: 2; top: 842px; left: 655px; width: 242px; height: 270px"
+             src="images/ftBodyPWB.png">
+
+        <span id="bgTitle6" style="position:absolute; z-index: 2; top: 1085px; left: 645px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">青春美少女</span>
+
+        <!--人气6-->
+        <span id="popularity6" style="position:absolute; z-index: 2; top: 1130px; left: 680px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">19230</span>
+
+        <!--编码6-->
+        <span id="code6" style="position:absolute; z-index: 2; top: 1173px; left: 673px; width: 200px; height: 100px;
+        text-align: center; font-family: 微软雅黑; font-size: 25px; color: #ffffff; margin-left:30px;">3628</span>
+
+        <img style="position:absolute; z-index: 2; top: 1200px; left: 680px; width: 200px; height: 100px"
+             src="images/button/aMVoteButton.png" onclick="">
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <a href="ftBodyROA.html"><img
+            style="position:absolute; z-index: 2; top: 1325px; left: 55px; width: 250px; height: 125px"
+            src="images/button/roaButton.png"></a>
+
+    <a href="ftBodyPM.html"><img
+            style="position:absolute; z-index: 2; top: 1325px; left: 350px; width: 250px; height: 125px"
+            src="images/button/mPButton.png"></a>
+
+    <a href="../home.html"><img
+            style="position:absolute; z-index: 2; top: 1325px; left: 650px; width: 250px; height: 125px"
+            src="images/button/goHomeButton.png"></a>
+
+
+</div>
+</body>
+
+<script>
+    // TODO 请求
+    function queryCode() {
+        var inputValue = document.getElementById("text").value;
+        console.log(inputValue);
+    }
+
+</script>
+
+</html>

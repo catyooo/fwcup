@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我要参赛</title>
+
+    <script src="js/jquery-1-11-3-min.js"></script>
+</head>
+<body>
+<div>
+    <img border="0" usemap="#planetmap" alt="Planets"
+         style="width: 1000px; height: 2100px" src="images/cftb.jpg">
+
+    <map name="planetmap" id="planetmap">
+        <!--注: coords属性(left, top, range)-->
+
+        <area shape="circle" coords="155,180,108" onclick="ft.optTeam('俄罗斯')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="385,180,108" onclick="ft.optTeam('沙特阿拉伯')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="615,180,108" onclick="ft.optTeam('埃及')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="845,180,108" onclick="ft.optTeam('乌拉圭')" target="_blank" alt="Venus"/>
+
+        <area shape="circle" coords="155,400,108" onclick="ft.optTeam('葡萄牙')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="385,400,108" onclick="ft.optTeam('西班牙')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="615,400,108" onclick="ft.optTeam('摩洛哥')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="845,400,108" onclick="ft.optTeam('伊朗')" target="_blank" alt="Venus"/>
+
+        <area shape="circle" coords="155,620,106" onclick="ft.optTeam('法国')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="385,620,106" onclick="ft.optTeam('澳大利亚')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="615,620,106" onclick="ft.optTeam('秘鲁')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="845,620,106" onclick="ft.optTeam('丹麦')" target="_blank" alt="Venus"/>
+
+        <area shape="circle" coords="155,840,106" onclick="ft.optTeam('阿根廷')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="385,840,106" onclick="ft.optTeam('冰岛')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="615,840,106" onclick="ft.optTeam('克罗地亚')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="845,840,106" onclick="ft.optTeam('尼日利亚')" target="_blank" alt="Venus"/>
+
+        <area shape="circle" coords="155,1058,106" onclick="ft.optTeam('巴西')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="385,1058,106" onclick="ft.optTeam('瑞士')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="615,1058,106" onclick="ft.optTeam('哥斯达黎加')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="845,1058,106" onclick="ft.optTeam('塞尔维亚')" target="_blank" alt="Venus"/>
+
+        <area shape="circle" coords="155,1278,106" onclick="ft.optTeam('德国')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="385,1278,106" onclick="ft.optTeam('墨西哥')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="615,1278,106" onclick="ft.optTeam('瑞典')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="845,1278,106" onclick="ft.optTeam('韩国')" target="_blank" alt="Venus"/>
+
+        <area shape="circle" coords="155,1496,106" onclick="ft.optTeam('比利时')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="385,1496,106" onclick="ft.optTeam('巴拿马')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="615,1496,106" onclick="ft.optTeam('突尼斯')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="845,1496,106" onclick="ft.optTeam('英格兰')" target="_blank" alt="Venus"/>
+
+        <area shape="circle" coords="155,1714,106" onclick="ft.optTeam('波兰')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="385,1714,106" onclick="ft.optTeam('塞内加尔')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="615,1714,106" onclick="ft.optTeam('哥伦比亚')" target="_blank" alt="Venus"/>
+        <area shape="circle" coords="845,1714,106" onclick="ft.optTeam('日本')" target="_blank" alt="Venus"/>
+    </map>
+
+    <div id="append"></div>
+
+    <img style="position:absolute; z-index: 2; top: 1850px; left: 290px; width: 400px; height: 200px"
+         src="images/button/upftCButton.png" onclick="ft.up()">
+</div>
+</body>
+
+<script>
+
+    var ft = {
+        team: '',   // 选中球队
+
+        // 选中球队
+        optTeam: function (team) {
+            console.log(team);
+            ft.team = team; // 赋值
+
+            var divA = document.getElementById("append");
+            divA.innerHTML = '';
+
+            switch (team) {
+                case '俄罗斯':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 277px; left: 155px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '沙特阿拉伯':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 277px; left: 385px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '埃及':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 277px; left: 614px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '乌拉圭':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 277px; left: 843px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+//                ----------------------------------------------------------------------------------------------------
+                case '葡萄牙':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 495px; left: 155px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '西班牙':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 495px; left: 385px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '摩洛哥':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 495px; left: 614px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '伊朗':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 495px; left: 843px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+//                ----------------------------------------------------------------------------------------------------
+                case '法国':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 714px; left: 155px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '澳大利亚':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 714px; left: 385px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '秘鲁':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 714px; left: 614px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '丹麦':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 714px; left: 843px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+//                ----------------------------------------------------------------------------------------------------
+                case '阿根廷':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 933px; left: 155px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '冰岛':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 933px; left: 385px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '克罗地亚':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 933px; left: 614px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '尼日利亚':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 933px; left: 843px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+//                ----------------------------------------------------------------------------------------------------
+                case '巴西':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1152px; left: 155px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '瑞士':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1152px; left: 385px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '哥斯达黎加':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1152px; left: 614px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '塞尔维亚':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1152px; left: 843px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+//                ----------------------------------------------------------------------------------------------------
+                case '德国':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1371px; left: 155px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '墨西哥':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1371px; left: 385px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '瑞典':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1371px; left: 614px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '韩国':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1371px; left: 843px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+//                ----------------------------------------------------------------------------------------------------
+                case '比利时':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1589px; left: 155px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '巴拿马':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1589px; left: 385px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '突尼斯':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1589px; left: 614px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '英格兰':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1589px; left: 843px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+//                ----------------------------------------------------------------------------------------------------
+                case '波兰':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1807px; left: 155px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '塞内加尔':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1807px; left: 385px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '哥伦比亚':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1807px; left: 614px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+                case '日本':
+                    divA.innerHTML = divA.innerText
+                        + '<img style="position:absolute; z-index: 2; top: 1807px; left: 843px; width: 21px; height: 21px" src="images/redCircle.png">';
+                    break;
+//                ----------------------------------------------------------------------------------------------------
+                default:
+                    alert('error');
+                    break;
+            }
+        },
+
+        // 前往上传照片页面
+        up: function () {
+            if (ft.team === '' || ft.team === null) {
+                // TODO
+                alert('请选择球队');
+            } else {
+                localStorage.setItem('team', ft.team);  // 选择的球队
+                location.href = 'ftBodyUP.html';
+            }
+        }
+    };
+</script>
+
+</html>

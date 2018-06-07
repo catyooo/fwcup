@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传照片</title>
+
+    <script src="js/jquery-1-11-3-min.js"></script>
+</head>
+
+<style>
+    input.text {
+        text-align: center;
+    }
+</style>
+
+<body>
+<div>
+    <img style="position:absolute; z-index: 1; width: 1000px; height: auto" src="images/uPbackgroundPhoto.jpg">
+
+    <img style="position:absolute; z-index: 2; top: 150px; left: 95px; width: 830px; height: 133px"
+         src="images/sInput.png">
+
+    <div style="position:relative;">
+        　　 <input id="text" class="text" type="text" style="font-family:'Microsoft YaHei';font-size:24px; color: #7b7b7b;
+                border:0px;background:none; position:absolute; z-index:2; left:250px; top:184px; width: 500px; height: 40px"
+                  placeholder="昵称&nbsp;(&nbsp;限五个字已内&nbsp;)"/>
+    </div>
+
+    <img style="position:absolute; z-index: 2; top: 615px; left: 310px; width: 400px; height: 250px" src="images/button/upButton.png">
+
+    <img id="submit_btn" style="position:absolute; z-index: 2; top: 1100px; left: 300px; width: 400px; height: 200px"
+         src="images/button/upSubButton.png">
+</div>
+</body>
+
+<script>
+    var team = localStorage.getItem('team');  // 选择的球队
+    console.log(team);
+</script>
+
+</html>

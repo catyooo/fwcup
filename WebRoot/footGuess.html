@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	 	<meta charset="UTF-8">
+	 	<link >
+		<script src="js/jquery-1-11-3-min.js"></script>
+		<script src="js/layer-v3.0.1/layer/layer.js"></script>
+		<title>竞猜页面</title>
+	</head>
+
+	<body>
+		<div>
+			<img border="0" usemap="#planetmap" alt="Planets" style="width: 1000px;position: absolute;" src="images/footGuess/OriginalPicture.jpg">	
+			<map name="planetmap" id="planetmap">
+		        <!--注: coords属性(left, top, range)-->
+				<!-- 上半区 -->
+		        <area shape="circle" coords="150,360,50" id="Russia" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="380,360,50" id="SaudiArabia" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="610,360,50" id="Egypt" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="840,360,50" id="Uruguay" target="_blank" alt="Venus"/>
+		        
+		        <area shape="circle" coords="150,560,50" id="Portugal" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="380,560,50" id="Spain" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="610,560,50" id="Morocco" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="840,560,50" id="Iran" target="_blank" alt="Venus"/>
+		        
+		        <area shape="circle" coords="150,765,50" id="France" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="380,765,50" id="Australia" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="610,765,50" id="Peru" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="840,765,50" id="Denmark" target="_blank" alt="Venus"/>
+		        
+		       	<area shape="circle" coords="150,970,50" id="Argentina" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="380,970,50" id="Iceland" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="610,970,50" id="Croatia" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="840,970,50" id="Nigeria" target="_blank" alt="Venus"/>
+		        <!-- 下半区 -->
+		      	<area shape="circle" coords="150,1950,50" id="Brazil" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="380,1950,50" id="Switzerland" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="610,1950,50" id="CostaRica" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="840,1950,50" id="Serbia" target="_blank" alt="Venus"/>
+		        
+		        <area shape="circle" coords="150,2150,50" id="Germany" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="380,2150,50" id="Mexico" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="610,2150,50" id="Sweden" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="840,2150,50" id="Korea" target="_blank" alt="Venus"/>
+		        
+		       	<area shape="circle" coords="150,2360,50" id="Belgium" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="380,2360,50" id="Panama" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="610,2360,50" id="Tunisia" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="840,2360,50" id="England" target="_blank" alt="Venus"/>
+		        
+		      	<area shape="circle" coords="150,2570,50" id="Poland" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="380,2570,50" id="Senegal" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="610,2570,50" id="Columbia" target="_blank" alt="Venus"/>
+		        <area shape="circle" coords="840,2570,50" id="Japan" target="_blank" alt="Venus"/>
+		    </map>
+			<div>
+				<img id="quedingbutton"  target="_blank" alt="Venus" src="images/footGuess/Confirmbutton.png" style="position:absolute;top: 1260px;left: 325px;height: 250px;width: 350px; z-index: 5;">
+			</div>
+			
+			<div>
+				<input type="text" name="" id="" value="" style="position:absolute;top:1485px ;left:125px;height: 75px;width: 750px; z-index: 5;font-size: 30px;text-align: center;"/>
+			</div>
+			<!-- 上半部分 -->
+			<div id="append1"></div>
+			<div id="divviewphoto1"></div>
+			<!-- 下半部分 -->
+			<div id="append2"></div>
+			<div id="divviewphoto2"></div>
+			
+			<div id="ConfirmPicture"></div>
+		</div>
+
+		<script> 
+			document.write("<s"+"cript type='text/javascript' src='js/footGuess.js?"+Math.random()+"'></scr"+"ipt>"); 
+		</script>
+		
+	</body>
+</html>
